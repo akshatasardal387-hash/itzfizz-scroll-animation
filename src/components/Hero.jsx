@@ -169,7 +169,10 @@ function Hero() {
 
         {/* Main Animated Visual */}
 
-       <div className="absolute right-[5%] top-[38%] md:right-[8%] md:top-[42%] scale-[0.65] md:scale-100">
+     <div
+  ref={visualRef}
+  className="absolute right-[5%] top-[38%] md:right-[8%] md:top-[42%] scale-[0.65] md:scale-100"
+>
 
           <div className="relative w-64 h-64">
 
