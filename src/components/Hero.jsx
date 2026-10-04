@@ -119,7 +119,7 @@ function Hero() {
     <section
       ref={heroRef}
       id="home"
-      className="relative min-h-[125vh] overflow-hidden"
+      className="relative min-h-[90vh] overflow-hidden"
     >
 
       {/* Sticky Hero Screen */}
