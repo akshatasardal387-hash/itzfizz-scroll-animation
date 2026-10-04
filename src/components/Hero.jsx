@@ -56,6 +56,7 @@ function Hero() {
         y: 80,
         scale: 1.45,
         rotation: 180,
+        ease: "none",
 
         scrollTrigger: {
           trigger: heroRef.current,
@@ -63,8 +64,6 @@ function Hero() {
           end: "bottom bottom",
           scrub: 1,
         },
-
-        ease: "none",
       })
 
       // 3. Heading scroll movement
@@ -72,6 +71,7 @@ function Hero() {
       gsap.to(headingRef.current, {
         y: -120,
         scale: 0.85,
+        ease: "none",
 
         scrollTrigger: {
           trigger: heroRef.current,
@@ -79,14 +79,13 @@ function Hero() {
           end: "70% top",
           scrub: 1,
         },
-
-        ease: "none",
       })
 
       // 4. Description movement
 
       gsap.to(descriptionRef.current, {
         y: -80,
+        ease: "none",
 
         scrollTrigger: {
           trigger: heroRef.current,
@@ -94,8 +93,6 @@ function Hero() {
           end: "50% top",
           scrub: 1,
         },
-
-        ease: "none",
       })
 
       // 5. Stats movement
@@ -103,6 +100,7 @@ function Hero() {
       gsap.to(statsRef.current, {
         y: 100,
         opacity: 0,
+        ease: "none",
 
         scrollTrigger: {
           trigger: heroRef.current,
@@ -110,8 +108,6 @@ function Hero() {
           end: "75% top",
           scrub: 1,
         },
-
-        ease: "none",
       })
 
     }, heroRef)
@@ -123,7 +119,7 @@ function Hero() {
     <section
       ref={heroRef}
       id="home"
-      className="relative min-h-[70vh] overflow-hidden"
+      className="relative min-h-[125vh] overflow-hidden"
     >
 
       {/* Sticky Hero Screen */}
@@ -169,10 +165,10 @@ function Hero() {
 
         {/* Main Animated Visual */}
 
-     <div
-  ref={visualRef}
-  className="absolute right-[5%] top-[38%] md:right-[8%] md:top-[42%] scale-[0.65] md:scale-100"
->
+        <div
+          ref={visualRef}
+          className="absolute right-[5%] top-[38%] md:right-[8%] md:top-[42%]"
+        >
 
           <div className="relative w-64 h-64">
 
